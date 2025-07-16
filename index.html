@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Roupa 🎂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="step" id="step1">
+      <h1>Roupa, this is for you 🎁</h1>
+      <img src="https://media.giphy.com/media/l0HlQ7LRalBd8hUuk/giphy.gif" alt="Gift GIF" class="gif"/>
+      <button onclick="nextStep(1)">Click for Surprise 🎉</button>
+    </div>
+
+    <div class="step" id="step2" style="display:none;">
+      <img src="https://media.giphy.com/media/3o6ZsY8GSLmvTfU1Xa/giphy.gif" alt="Hearts & Balloons" class="gif"/>
+      <button onclick="nextStep(2)">Next ➡️</button>
+    </div>
+
+    <div class="step" id="step3" style="display:none;">
+      <h1>🎂 Happy Birthday Roupa 🎂</h1>
+      <p>
+        You’re not just a friend, you’re my chosen family 💕<br>
+        Thank you for every laugh and every tear.<br>
+        May your day be full of joy, magic, and love you deserve! 🎈💫<br>
+        <strong>Happy Birthday, my precious bestie 🥰</strong>
+      </p>
+      <img src="https://media.giphy.com/media/kG9QsdX3C0W6c/giphy.gif" alt="Cute Birthday GIF" class="gif"/>
+    </div>
+  </div>
+
+  <script>
+    function nextStep(current) {
+      document.getElementById(`step${current}`).style.display = "none";
+      document.getElementById(`step${current + 1}`).style.display = "flex";
+    }
+  </script>
+</body>
+</html>
