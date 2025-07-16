@@ -44,7 +44,13 @@ p {
   border-radius: 15px;
   box-shadow: 0 0 15px #ff66cc;
   margin: 20px 0;
-}
+  .birthday-gif {
+  width: 280px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+    
+  }
+  
 
 button {
   padding: 12px 25px;
