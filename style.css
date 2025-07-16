@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1.5s ease-in;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffccff;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  max-width: 600px;
+  color: #ffe6f7;
+  line-height: 1.6;
+}
+
+.gif {
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #ff66cc;
+  margin: 20px 0;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #ff66cc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #ff1493;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
